@@ -8,11 +8,8 @@ const Home = () => {
         <h2>Best Selling Products</h2>
         <p>Speakers Of Many Variations</p>
       </div>
-      <div>
-        {["Product 1", "Product 2"].map(product => {
-          product
-        })}
-      </div>
+      <div>{["Product 1", "Product 2"].map(product => product)}</div>
+      Footer
     </>
   )
 }
