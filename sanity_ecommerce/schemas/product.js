@@ -9,6 +9,7 @@ export default {
       type: 'array',
       of: [{type: 'image'}],
       options: {
+        // used to crop the image in anywhere
         hotspot: true,
       },
     },
