@@ -26,5 +26,10 @@ export default {
         maxLength: 90,
       },
     },
+    {
+      name: 'price',
+      title: 'Details',
+      type: 'string',
+    },
   ],
 }
