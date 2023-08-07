@@ -1,4 +1,5 @@
-import sanityCli from "@sanity/client"
+import React from "react"
+import sanityClient from "@sanity/client"
 import ImageUrlBuilder from "@sanity/image-url"
 
 export const client = sanityClient({
