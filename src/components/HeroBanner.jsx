@@ -6,6 +6,7 @@ const HeroBanner = () => {
       <div>
         <p className="beats-solo">SMALL TEXT</p>
         <h3>MID TEXT</h3>
+        <img src="" alt="headphones" className="hero-banner-image" />
       </div>
     </div>
   )
