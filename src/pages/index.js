@@ -7,8 +7,6 @@ const Home = ({ products, bannerData }) => {
   return (
     <>
       <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
-      {console.log(bannerData)}
-      {console.log(products)}
       <div className="products-heading">
         <h2>Best Selling Products</h2>
         <p>Speakers Of Many Variations</p>
@@ -23,7 +21,7 @@ const Home = ({ products, bannerData }) => {
   )
 }
 
-export const serverSideProps = async () => {
+export const getServerSideProps = async () => {
   const query = '*[_type == "product"]'
   const products = await client.fetch(query)
 
