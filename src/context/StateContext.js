@@ -1,10 +1,9 @@
 import React, { createContext, useContext, useState, useEffect } from "react"
 
 import { toast } from "react-hot-toast"
+const Context = createContext()
 
 export const StateContext = ({ children }) => {
-  const Context = createContext()
-
   const [showCart, setShowCart] = useState(false)
   const [cartItems, setCartItems] = useState()
   const [totalPrice, setTotalPrice] = useState()
