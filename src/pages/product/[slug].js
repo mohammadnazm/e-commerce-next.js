@@ -30,9 +30,9 @@ const ProductDetails = ({ product, products }) => {
               <AiFillStar />
               <AiOutlineStar />
             </div>
-            <p>{20}</p>
+            <p>(20)</p>
           </div>
-          <h4>Details:</h4>
+          <h4>Details: </h4>
           <p>{details}</p>
           <p className="price">${price}</p>
           <div className="quantity">
@@ -46,14 +46,14 @@ const ProductDetails = ({ product, products }) => {
                 <AiOutlinePlus />
               </span>
             </p>
-            <div className="buttons">
-              <button type="button" className="add-to-cart" onClick="">
-                Add to cart
-              </button>
-              <button type="button" className="buy-now" onClick="">
-                Buy Now
-              </button>
-            </div>
+          </div>
+          <div className="buttons">
+            <button type="button" className="add-to-cart" onClick="">
+              Add to Cart
+            </button>
+            <button type="button" className="buy-now" onClick="">
+              Buy Now
+            </button>
           </div>
         </div>
       </div>
