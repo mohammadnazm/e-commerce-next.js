@@ -1,13 +1,36 @@
 import React from "react"
+import {
+  AiOutlineMinus,
+  AiOutlinePlus,
+  AiFillStar,
+  AiOutlineStar,
+} from "react-icons/ai"
 import { client, urlFor } from "../../lib/client"
 
 const ProductDetails = ({ product, products }) => {
   const { image, name, details, price } = product
   return (
     <div>
-      <div className="product-details-container">
+      <div className="product-detail-container">
         <div className="image-container">
           <img src={urlFor(image && image[0])} />
+        </div>
+        {/* <div className="small-images-container">
+          {image?.map((item, i) => (
+            <img src={urlFor(item)} className="" onMouseEnter="" />
+          ))}
+        </div> */}
+        <div className="product-details-desc">
+          <h1>{name}</h1>
+          <div className="reviews">
+            <div>
+              <AiFillStar />
+              <AiFillStar />
+              <AiFillStar />
+              <AiFillStar />
+              <AiOutlineStar />
+            </div>
+          </div>
         </div>
       </div>
     </div>
