@@ -12,14 +12,14 @@ const ProductDetails = ({ product, products }) => {
   return (
     <div>
       <div className="product-detail-container">
-        <div className="image-container">
-          <img src={urlFor(image && image[0])} />
+        <div>
+          <div className="image-container">
+            <img
+              src={urlFor(image && image[0])}
+              className="product-detail-image"
+            />
+          </div>
         </div>
-        {/* <div className="small-images-container">
-          {image?.map((item, i) => (
-            <img src={urlFor(item)} className="" onMouseEnter="" />
-          ))}
-        </div> */}
         <div className="product-detail-desc">
           <h1>{name}</h1>
           <div className="reviews">
