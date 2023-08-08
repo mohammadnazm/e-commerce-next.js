@@ -13,13 +13,11 @@ const ProductDetails = ({ product, products }) => {
   return (
     <div>
       <div className="product-detail-container">
-        <div>
-          <div className="image-container">
-            <img
-              src={urlFor(image && image[0])}
-              className="product-detail-image"
-            />
-          </div>
+        <div className="image-container">
+          <img
+            src={urlFor(image && image[0])}
+            className="product-detail-image"
+          />
         </div>
         <div className="product-detail-desc">
           <h1>{name}</h1>
