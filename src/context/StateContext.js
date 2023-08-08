@@ -3,6 +3,8 @@ import React, { createContext, useContext, useState, useEffect } from "react"
 import { toast } from "react-hot-toast"
 
 export const StateContext = ({ children }) => {
+  const Context = createContext()
+
   const [showCart, setShowCart] = useState(false)
   const [cartItems, setCartItems] = useState()
   const [totalPrice, setTotalPrice] = useState()
@@ -36,3 +38,5 @@ export const StateContext = ({ children }) => {
     </Context.Provider>
   )
 }
+
+export const useStateContext = () => useContext(Context)
