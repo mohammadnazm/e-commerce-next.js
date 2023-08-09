@@ -30,6 +30,11 @@ const Cart = () => {
             <span className="heading">Your Cart</span>
             <span className="cart-num-items">({totalQuantities} items)</span>
           </button>
+          {cartItems.length < 1 && (
+            <div className="empty-cart">
+              <AiOutlineShopping size={150} />
+            </div>
+          )}
         </div>
       </div>
     </div>
