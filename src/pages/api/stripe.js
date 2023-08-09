@@ -1,4 +1,5 @@
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY)
+import Stripe from "stripe"
+const stripe = new Stripe(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY)
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
@@ -13,7 +14,7 @@ export default async function handler(req, res) {
           { shipping_rate: "shr_1NdIGHAExSyDh92ea9tHbFVH" },
           { shipping_rate: "shr_1NdIInAExSyDh92eB3uDtK5Y" },
         ],
-        line_items: req.body.cartItems.map(item => {
+        line_items: req.body.map(item => {
           const img = item.image[0].asset._ref
           const newImage = img
             .replace(
@@ -42,7 +43,7 @@ export default async function handler(req, res) {
         cancel_url: `${req.headers.origin}/?canceled=true`,
       }
       const session = await stripe.checkout.sessions.create(params)
-      res.redirect(303, session.url)
+      res.status(200).json(session)
     } catch (err) {
       res.status(err.statusCode || 500).json(err.message)
     }

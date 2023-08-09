@@ -24,7 +24,7 @@ const Cart = () => {
     onRemove,
   } = useStateContext()
 
-  const handleCheckOut = async () => {
+  const handleCheckout = async () => {
     const stripe = await getStripe()
 
     const response = await fetch("/api/stripe", {
@@ -41,7 +41,7 @@ const Cart = () => {
 
     toast.loading("Redirecting...")
 
-    stripe.redirectToCheckOut({ sessionId: data.id })
+    stripe.redirectToCheckout({ sessionId: data.id })
   }
 
   return (
@@ -129,7 +129,7 @@ const Cart = () => {
                 <button
                   type="button"
                   className="btn"
-                  onClick={() => handleCheckOut()}
+                  onClick={() => handleCheckout()}
                 >
                   Pay With Stripe
                 </button>
