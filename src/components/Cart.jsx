@@ -46,7 +46,7 @@ const Cart = () => {
             </div>
           )}
           <div className="product-container">
-            {cartItems.length > 1 &&
+            {cartItems.length >= 1 &&
               cartItems.map((item, i) => (
                 <div className="product" key={item._id}>
                   <img
