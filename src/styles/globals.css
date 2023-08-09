@@ -357,16 +357,20 @@ span.text-red {
 .flex h5 {
   font-size: 24px;
 }
+
 .flex h4 {
   font-size: 20px;
 }
+
 .total {
   display: flex;
   justify-content: space-between;
 }
+
 .total h3 {
   font-size: 22px;
 }
+
 .remove-item {
   font-size: 24px;
   color: #f02d34;
