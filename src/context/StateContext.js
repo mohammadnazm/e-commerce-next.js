@@ -37,8 +37,8 @@ export const StateContext = ({ children }) => {
   const toggleCartItemQuantity = (id, value) => {
     foundProduct = cartItems.find(item => item._id === id)
     index = cartItems.findIndex(product => product._id === id)
-
     const newCartItems = cartItems.splice(index, 1)
+
     if (value === "inc") {
       setCartItems([
         ...newCartItems,
