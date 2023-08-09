@@ -41,7 +41,7 @@ export const StateContext = ({ children }) => {
     if (value === "inc") {
       setCartItems([
         ...cartItems,
-        { ...product, quantity: product.quantity + 1 },
+        { ...foundProduct, quantity: foundProduct.quantity + 1 },
       ])
       setTotalPrice(prevTotalPrice => prevTotalPrice + foundProduct.price)
     } else if (value === "dec") {
