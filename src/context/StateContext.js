@@ -35,15 +35,15 @@ export const StateContext = ({ children }) => {
   }
 
   const onRemove = product => {
-    foundProduct = cartItems.find(item => item._id === product.id)
-    const newCartItems = cartItems.filter(item => item._id !== product.id)
+    foundProduct = cartItems.find(item => item._id === product._id)
+    const newCartItems = cartItems.filter(item => item._id !== product._id)
 
     setTotalPrice(
       prevTotalPrice =>
-        prevTotalPrice - foundProduct?.price * foundProduct?.quantity
+        prevTotalPrice - foundProduct.price * foundProduct.quantity
     )
     setTotalQuantities(
-      prevTotalQuantities => prevTotalQuantities - foundProduct?.quantity
+      prevTotalQuantities => prevTotalQuantities - foundProduct.quantity
     )
     setCartItems(newCartItems)
   }
