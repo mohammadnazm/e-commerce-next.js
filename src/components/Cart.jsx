@@ -61,17 +61,20 @@ const Cart = () => {
                     <div className="flex bottom">
                       <div>
                         <p className="quantity-desc">
-                          <p className="quantity-desc">
-                            <span className="minus" onClick={decQty}>
-                              <AiOutlineMinus />
-                            </span>
-                            <span className="num">{qty}</span>
-                            <span className="plus" onClick={incQty}>
-                              <AiOutlinePlus />
-                            </span>
-                          </p>
+                          <span className="minus" onClick="">
+                            <AiOutlineMinus />
+                          </span>
+                          <span className="num">9</span>
+                          <span className="plus" onClick="">
+                            <AiOutlinePlus />
+                          </span>
                         </p>
                       </div>
+                      <button
+                        type="button"
+                        className="remove-item"
+                        onClick=""
+                      ></button>
                     </div>
                   </div>
                 </div>
