@@ -261,6 +261,7 @@ span.text-red {
   font-size: 14px;
   font-weight: 300;
 }
+
 .cart-wrapper {
   width: 100vw;
   background: rgba(0, 0, 0, 0.5);
@@ -268,7 +269,7 @@ span.text-red {
   right: 0;
   top: 0;
   z-index: 100;
-  /* will-change: transform; */
+  will-change: transform;
   transition: all 1s ease-in-out;
 }
 .cart-container {
