@@ -13,12 +13,12 @@ const ProductDetails = ({ product, products }) => {
   const { image, name, details, price } = product
   const [index, setIndex] = useState(0)
 
-  const { decQty, incQty, qty, onAdd, setCartItems } = useStateContext()
+  const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext()
 
   const handleBuyNow = (product, qty) => {
     onAdd(product, qty)
 
-    setCartItems(true)
+    setShowCart(true)
   }
 
   return (
