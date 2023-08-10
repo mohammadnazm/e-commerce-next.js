@@ -12,6 +12,7 @@
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.14.5",
     "@stripe/stripe-js": "^2.0.0",
+    "canvas-confetti": "^1.6.0",
     "next": "13.4.13",
     "next-sanity": "^5.2.0",
     "react": "^18.2.0",

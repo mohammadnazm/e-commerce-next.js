@@ -3,6 +3,7 @@ import Link from "next/link"
 import { BsBagCheckFill } from "react-icons/bs"
 
 import { useStateContext } from "@/context/StateContext"
+import { runFireworks } from "@/lib/utils"
 
 const success = () => {
   const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext()
@@ -13,6 +14,7 @@ const success = () => {
     setCartItems([])
     setTotalPrice([])
     setTotalQuantities([])
+    runFireworks()
   }, [])
   return (
     <div className="success-wrapper">

@@ -1,4 +1,4 @@
-import confetti from "canvas-conffeti"
+import confetti from "canvas-conffitte"
 
 export const runFireworks = () => {
   var duration = 5 * 1000
