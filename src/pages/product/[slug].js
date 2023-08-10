@@ -5,17 +5,17 @@ import {
   AiFillStar,
   AiOutlineStar,
 } from "react-icons/ai"
+
 import { client, urlFor } from "../../lib/client"
-import { Product } from "@/components"
+import { Product } from "../../components"
 import { useStateContext } from "../../context/StateContext"
 
 const ProductDetails = ({ product, products }) => {
   const { image, name, details, price } = product
   const [index, setIndex] = useState(0)
-
   const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext()
 
-  const handleBuyNow = (product, qty) => {
+  const handleBuyNow = () => {
     onAdd(product, qty)
 
     setShowCart(true)
@@ -44,6 +44,7 @@ const ProductDetails = ({ product, products }) => {
             ))}
           </div>
         </div>
+
         <div className="product-detail-desc">
           <h1>{name}</h1>
           <div className="reviews">
@@ -79,22 +80,21 @@ const ProductDetails = ({ product, products }) => {
             >
               Add to Cart
             </button>
-            <button
-              type="button"
-              className="buy-now"
-              onClick={() => handleBuyNow(product, qty)}
-            >
+            <button type="button" className="buy-now" onClick={handleBuyNow}>
               Buy Now
             </button>
           </div>
         </div>
       </div>
+
       <div className="maylike-products-wrapper">
         <h2>You may also like</h2>
-        <div className="maylike-products-container track">
-          {products.map(item => (
-            <Product key={item._id} product={item} />
-          ))}
+        <div className="marquee">
+          <div className="maylike-products-container track">
+            {products.map(item => (
+              <Product key={item._id} product={item} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
@@ -129,6 +129,8 @@ export const getStaticProps = async ({ params: { slug } }) => {
 
   const product = await client.fetch(query)
   const products = await client.fetch(productsQuery)
+
+  console.log(product)
 
   return {
     props: { products, product },
