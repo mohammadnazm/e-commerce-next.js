@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import Link from "next/link"
 import { BsBagCheckFill } from "react-icons/bs"
 
@@ -7,6 +7,13 @@ import { useStateContext } from "@/context/StateContext"
 const success = () => {
   const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext()
   const [order, setOrder] = useState()
+
+  useEffect(() => {
+    localStorage.clear()
+    setCartItems([])
+    setTotalPrice([])
+    setTotalQuantities([])
+  }, [])
   return (
     <div className="success-wrapper">
       <div className="success">
