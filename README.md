@@ -11,6 +11,7 @@ Full Stack E-Commerce Application with Payment Integration Stripe & Sanity
 4. Cart Page: Clicking on the shopping cart icon takes the user to the cart page, where they can review the products added to the cart, update quantities, remove items, and calculate the total order amount.
 5. Secure payments: Integrate a payment gateway to securely process transactions.
 6. Continue Shopping: Users can continue shopping and add more items to the cart or proceed to the checkout process.
+7. Admin dashboard: Manage products.
 
 ## Installation
 
