@@ -16,6 +16,7 @@ const success = () => {
     setTotalQuantities([])
     runFireworks()
   }, [])
+
   return (
     <div className="success-wrapper">
       <div className="success">
