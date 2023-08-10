@@ -82,7 +82,7 @@ const ProductDetails = ({ product, products }) => {
             <button
               type="button"
               className="buy-now"
-              onClick={handleBuyNow(product, qty)}
+              onClick={() => handleBuyNow(product, qty)}
             >
               Buy Now
             </button>
