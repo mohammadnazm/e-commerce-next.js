@@ -1,6 +1,6 @@
 # E-commerce Website
 
-Modern Full Stack ECommerce Application with Stripe & Sanity
+Full Stack E-Commerce Application with Stripe & Sanity
 
 ![ezgif com-gif-maker](https://github.com/mohammadnazm/e-commerce-next.js/assets/63538356/8e471200-2a42-4716-be92-d71cb48f05d1)
 
