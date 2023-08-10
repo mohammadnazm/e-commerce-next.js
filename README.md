@@ -1,25 +1,29 @@
-## E-Commerce Store
-[Essence](https://e-commerce-next-js-mohamednazm-web.vercel.app/) - An e-commerce store.
+# E-commerce Website
 
-<div style="position: relative; padding-bottom: 53.645833333333336%; height: 0;"><iframe src="https://www.loom.com/embed/37f4ae11fda24195aa9361f2276be048?sid=29a383a7-6ffe-41e9-8592-a88cbe760b88" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+Modern Full Stack ECommerce Application with Stripe & Sanity
+
+![ezgif com-gif-maker](https://github.com/mohammadnazm/e-commerce-next.js/assets/63538356/8e471200-2a42-4716-be92-d71cb48f05d1)
 
 ## Features
+1. Product Display: The e-commerce website displays various products along with their descriptions, prices, and images.
+2. Add To Cart Button: Each product listing includes an "Add to Cart" button or associated icon.  
+3. Cart Page: Clicking on the shopping cart icon takes the user to the cart page, where they can review the products added to the cart, update quantities, remove items, and calculate the total order amount.
+4. Continue Shopping: Users can continue shopping and add more items to the cart or proceed to the checkout process.
 
-- Landing page with a list of featured categories and featured products
-- Product Listing page
-- Sort and filter products
-- Authentication
-- Wishlist Management
-- Cart Management
-- Product Details page
-- Search products
-- Toasts and Loaders
+## Installation
 
-## Built using
+1. `git clone https://github.com/mohammadnazm/e-commerce-next.js.git`
 
-- ReactJS
-- React Router v6
-- React Context API and useReducer
-- MockBee
-- [Capture UI](https://capture-ui.netlify.app/) - CSS Component Library
-- React Hot Toast 
+2. `cd e-commerce-next.js`
+
+3. `npm install`
+
+4. `npm start`
+
+## Contributions
+
+Any feature requests and pull requests are welcome!
+
+## License
+
+The project is under [MIT license](https://choosealicense.com/licenses/mit/).
